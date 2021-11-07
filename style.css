@@ -24,9 +24,11 @@ body{
 
 #main{
     display: flex;
+    
     margin: 40px;
     color: var(--textColor);
     justify-content:center;
+    
     }
 
 .icon{
@@ -34,8 +36,14 @@ body{
     height: 20px;
 }
 
+p{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
 #Sedans, #Suvs, #Luxury{
-    padding: 40px; 
+    padding: 40px;
+    padding-bottom: 60px; 
     display: grid; 
     min-width: 200px;
     
