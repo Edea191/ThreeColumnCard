@@ -1,0 +1,182 @@
+:root{
+    --SedanBackgroundColor:hsl(31, 77%, 52%);
+    --SuvBackgroundColor:hsl(184, 100%, 22%);
+    --LuxuryBackgroundColor:hsl(179, 100%, 13%);
+
+    --bodyBackground:hsl(0, 0%, 95%);
+    --textColor:hsla(0, 0%, 100%, 0.75);
+    --textColorHover:hsla(0, 0%, 100%, 1);
+
+    --SedanBackgroundColorHover:hsl(31, 77%, 72%);
+    --SuvBackgroundColorHover:hsl(184, 100%, 42%);
+    --LuxuryBackgroundColorHover:hsl(179, 100%, 33%);
+}
+
+
+*{
+    padding: 0px;
+    
+}
+
+body{
+    background-color: var(--bodyBackground);
+}
+
+#main{
+    display: flex;
+    margin: 40px;
+    color: var(--textColor);
+    justify-content:center;
+    }
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+#Sedans, #Suvs, #Luxury{
+    padding: 40px; 
+    display: grid; 
+    min-width: 200px;
+    
+}
+
+.icon{
+    margin-bottom: 10px;
+}
+
+
+
+
+.title{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#Sedans:hover, #Suvs:hover, #Luxury:hover{
+    transition: color 1s;
+    color:var(--textColorHover);
+}
+
+#Sedans{
+    transition: background-color 1s;
+    background-color: var(--SedanBackgroundColor);
+
+}
+
+#Suvs{
+    transition: background-color 1s;
+    background-color: var(--SuvBackgroundColor);
+}
+
+#Luxury{
+    transition: background-color 1s;
+    background-color: var(--LuxuryBackgroundColor);
+}
+
+
+#Sedans:hover{
+    transition: background-color 1s;
+    background-color: var(--SedanBackgroundColorHover);
+
+}
+
+#Suvs:hover{
+    transition: background-color 1s;
+    background-color: var(--SuvBackgroundColorHover);
+}
+
+#Luxury:hover{
+    transition: background-color 1s;
+    background-color: var(--LuxuryBackgroundColorHover);
+}
+
+
+.button{
+    background-color: whitesmoke;
+    transition: background-color 1s;
+    border: whitesmoke 1px solid;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    align-self: flex-end;
+}
+
+
+#SedanButton{
+    color: var(--SedanBackgroundColor);
+}
+
+#SedanButton:hover{
+    transition: background-color 1s;
+    transition: color 1s;
+    background-color: var(--SedanBackgroundColor);
+    color: whitesmoke;
+
+}
+
+#SuvsButton{
+    color:var(--SuvBackgroundColor);
+}
+
+#SuvsButton:hover{
+    transition: background-color 1s;
+    transition: color 1s;
+    background-color: var(--SuvBackgroundColor);
+    color: whitesmoke;
+}
+
+#LuxuryButton{
+    color: var(--LuxuryBackgroundColor);
+}
+
+#LuxuryButton:hover{
+    transition: background-color 1s;
+    transition: color 1s;
+    background-color: var(--LuxuryBackgroundColor);
+    color: whitesmoke;
+}
+
+
+
+@media (min-width:575px){
+   
+#Sedans{
+    border: var(--SedanBackgroundColor) 1px solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+    
+#Luxury{
+    border: var(--LuxuryBackgroundColor) 1px solid;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+}
+
+
+@media (max-width:575px){
+   
+    #main{
+    flex-direction: column;
+    margin: 20px;
+    }
+
+
+    #Sedans{
+        border:var(--SedanBackgroundColor) 1px solid;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    #Luxury{
+        border:var(--LuxuryBackgroundColor) 1px solid;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
